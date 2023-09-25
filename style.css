@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Passion+One&display=swap');
+
+body {
+	width: 100%;
+	margin: 0%;
+}
+
+#header {
+	background-color: #00016B; /* Dark blue */
+	width: 12%;
+	padding: 2%;
+	position: fixed;
+	height: 100%;
+	padding-right: 5%;
+}
+
+#logo {
+	width: 45%;
+	margin-bottom: 3%;
+	margin-top: 7%;
+}
+
+#nav {
+	font-family: 'Passion One', cursive;
+	padding-left: 0%;
+	
+}
+
+#nav li {
+	text-decoration: none;
+	list-style: none;
+	padding: 6%;
+	background-color: white;
+	font-size: 1.2rem;
+	padding-left: 15%;
+	left: 0;
+}
+
+#nav li a {
+	text-decoration: none;
+	color: #00016B; /* Dark blue */
+}
+
+#nav li a:hover {
+	color: #1D55F0; /* Blue */
+}
+
+#nav li#active.active {
+	background-color: #1D55F0; /* Blue */
+}
+
+#nav li#active.active a {
+    color: white;
+    background-color: #1D55F0; /* Blue */
+}
+
+#nav li#active.active a:hover {
+	color: white;
+}
+
+#sign_out {
+	color: white;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 0.7rem;
+}
+
+#sign_out:hover {
+	color: #1D55F0; /* Blue */
+}
+
+
+
+
