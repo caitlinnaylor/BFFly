@@ -3,9 +3,15 @@
 body {
 	width: 100%;
 	margin: 0%;
+	display: grid;
+	grid-template:
+		"sidebar profile quizzes"
+	/*grid-template-rows: auto auto 1fr auto auto;*/
+	grid-template-columns: auto auto auto;
 }
 
 #header {
+	grid-area: sidebar;
 	background-color: #00016B; /* Dark blue */
 	width: 12%;
 	padding: 2%;
@@ -67,6 +73,7 @@ body {
 #sign_out:hover {
 	color: #1D55F0; /* Blue */
 }
+
 
 
 
