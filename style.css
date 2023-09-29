@@ -4,19 +4,34 @@ body {
     width: 100%;
     margin: 0%;
     display: grid;
-    grid-template-columns: 15% 50% auto; /* Three columns: sidebar, profile, quizzes */
+    grid-template-columns: 16% 50% auto; /* Three columns: sidebar, profile, quizzes */
 }
 
 /* Side Navigation Bar */
+/**
 #header {
     grid-column: 1;
-    background-color: #00016B; /* Dark blue */
+    background-color: #00016B; 
     padding: 8%;
-    /*position: fixed;*/
+ 
     height: 100%;
     padding-right: 25%;
 	min-height: 100vh;
 }
+*/
+
+#header {
+    grid-column: 1;
+    background-color: #00016B;
+    padding: 2%;
+    position: fixed; /* Set header to fixed position */
+    top: 0; /* Position it at the top of the viewport */
+    left: 0;
+    width: 10%; /* Set the width explicitly */
+    height: 100%; /* Make it cover the entire viewport height */
+    padding-right: 4%;
+}
+
 
 #logo {
     width: 45%;
@@ -34,7 +49,7 @@ body {
     list-style: none;
     padding: 6%;
     background-color: white;
-    font-size: 1.2rem;
+    font-size: 1.2rem; /*font size responsiveness not working */
     padding-left: 15%;
     left: 0;
 }
@@ -75,6 +90,13 @@ body {
 #profile {
     grid-column: 2;
     background-color: #D4E5F5; /* Light blue */
+}
+
+#user {
+	width: 35%;
+    margin-bottom: 4%;
+    margin-top: 7%;
+	margin-left: 10%;
 }
 
 /* Quizzes */
