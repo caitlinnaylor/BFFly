@@ -213,6 +213,79 @@ h2 {
 	margin-top: 10%;
 }
 
+/* Feed */
+
+#feed_1 {
+	grid-column: 2;
+	margin-left: 25%;
+}
+
+#feed_2 {
+	grid-column: 3;
+	margin-right:25%;
+	margin-top:1%;
+}
+
+#feed_profile {
+	background-color: #D4E5F5; /* Light blue */
+	padding: 8%;
+	margin-top: 5%;
+	width:25vw;
+}
+
+.feed_keyinfo {
+	background-color: white;
+	color: #00016B; /* dark blue */
+	font-size: 1.2rem;
+	font-family: 'Passion One', cursive;
+	border: none;
+	padding: 10%;
+	text-align:center;
+	margin:0%;
+	
+}
+
+#feed_user {
+	width: 10vw;
+    margin-bottom: 2%;
+}
+
+#feed_name_age {
+	background-color: #1D55F0; /* Blue */
+	color: white;
+	font-size: 1.2rem;
+	font-family: 'Passion One', cursive;
+	padding:3%;
+	border: none;
+	cursor: default;
+	margin-left:1%;
+}
+
+#feed_about_me {
+	background-color: #1D55F0; /* Blue */
+	color: white;
+	font-size: 0.7rem;
+	font-family: 'DM Sans', sans-serif;
+	border: none;
+	cursor: default;
+	padding:3%;
+	height: 12vh;
+	margin-top: 0%;
+	
+}
+
+#feed_thought {
+	background-color: #1D55F0; /* Blue */
+	color: white;
+	height: 6vh;
+	font-size: 0.7rem;
+	font-family: 'DM Sans', sans-serif;
+	margin-top: 0%;
+	border: none;
+	cursor: default;
+	padding:3%;
+	
+}
 	
 
 

@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> BFFly - Account </title> 
+		<link rel = "stylesheet" type = "text/css" href = "style.css">
+		<script src = "myscripts.js"></script>
+		
+	</head>
+	
+	<body id = "home">
+	<!-- Header - same on every page other than which page is 'active' -->
+		<div id = "header">
+		  <img a href="index.html" title="logo" id= "logo" src="logo.svg" alt="BFFLy logo">
+		  
+		  <ul id = "nav">
+				<li><a href= "index.html"> Account </a></li><br>
+				<li><a href= "chat.html"> Chat </a> </li><br>
+				<li id = "active"><a href= "feed.html"> Feed </a> </li><br>
+				<li><a href= "contact.html"> Contact Us </a> </li>
+		  </ul>
+		  
+		  <a id = "sign_out"> SIGN OUT </a>
+		  
+		</div>
+		
+		<div id = "feed_1">
+			<table id="feed_profile">
+				<tr class="feed_row"> <!-- First row -->
+					<td rowspan="3"> 
+						<img title="image of other user" id="feed_user" src="user_1.svg" alt="image of other user">
+					</td>
+					<td>
+						<p class="feed_keyinfo">ENFP</p> 
+					</td>
+				</tr>
+				<tr class="feed_row"> <!-- Second row -->
+					<td>
+						<p class="feed_keyinfo">HIKING</p> 
+					</td>
+				</tr>
+				<tr class="feed_row"> <!-- Third row -->
+					<td>
+						<p class="feed_keyinfo">DOGS</p>  
+					</td>
+				</tr>
+				<tr class="feed_row"> <!-- Fourth row -->
+					<td colspan="2">
+						<p id="feed_name_age">John Smith, 25</p> 
+					</td>
+				</tr>
+				<tr class="feed_row"> <!-- Fifth row -->
+					<td colspan="2">
+						<p id="feed_about_me">I’m a landscape architect and am extremely passionate about the environment. 
+						I have a Golden Retriever and a German Shepherd. I want some mates to go hiking with. </p>
+					</td>
+				</tr>
+				<tr class="feed_row"> <!-- Sixth row -->
+					<td colspan="2">
+						<p id="feed_thought">Scrolling instagram at work. Oops. </p>
+					</td>
+				</tr>
+				<tr>
+					<button id = "plus_btn"> + </button>
+				</tr>
+			</table>
 
+				
+		</div>
+		
+		<div id = "feed_2">
+			<table id="feed_profile">
+				<tr class="feed_row"> <!-- First row -->
+					<td rowspan="3"> 
+						<img title="image of other user" id="feed_user" src="user_1.svg" alt="image of other user">
+					</td>
+					<td>
+						<p class="feed_keyinfo">ENFP</p> 
+					</td>
+				</tr>
+				<tr class="feed_row"> <!-- Second row -->
+					<td>
+						<p class="feed_keyinfo">HIKING</p> 
+					</td>
+				</tr>
+				<tr class="feed_row"> <!-- Third row -->
+					<td>
+						<p class="feed_keyinfo">DOGS</p>  
+					</td>
+				</tr>
+				<tr class="feed_row"> <!-- Fourth row -->
+					<td colspan="2">
+						<p id="feed_name_age">John Smith, 25</p> 
+					</td>
+				</tr>
+				<tr class="feed_row"> <!-- Fifth row -->
+					<td colspan="2">
+						<p id="feed_about_me">I’m a landscape architect and am extremely passionate about the environment. 
+						I have a Golden Retriever and a German Shepherd. I want some mates to go hiking with. </p>
+					</td>
+				</tr>
+				<tr class="feed_row"> <!-- Sixth row -->
+					<td colspan="2">
+						<p id="feed_thought">Scrolling instagram at work. Oops. </p>
+					</td>
+				</tr>
+			</table>
+
+				
+		</div>
+		
+		<script>
+			document.getElementById("active").classList.add("active");
+		</script>
+		
+	</body>
+	
+	
+<html>
