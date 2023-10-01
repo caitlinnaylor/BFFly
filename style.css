@@ -4,7 +4,7 @@ body {
     width: 100%;
     margin: 0%;
     display: grid;
-    grid-template-columns: 16% 50% auto; /* Three columns: sidebar, profile, quizzes */
+    grid-template-columns: 16% 45% auto; /* Three columns: sidebar, profile, quizzes */
 }
 
 /* Side Navigation Bar */
@@ -22,7 +22,7 @@ body {
 
 #header {
     grid-column: 1;
-    background-color: #00016B;
+    background-color: #00016B; /* dark blue */
     padding: 2%;
     position: fixed; /* Set header to fixed position */
     top: 0; /* Position it at the top of the viewport */
@@ -84,19 +84,49 @@ body {
 
 #sign_out:hover {
     color: #1D55F0; /* Blue */
+	cursor: pointer;
 }
 
 /* User Profile */
 #profile {
     grid-column: 2;
     background-color: #D4E5F5; /* Light blue */
+	padding-left:6%;
+	padding-bottom:6%;
 }
 
 #user {
 	width: 35%;
     margin-bottom: 4%;
     margin-top: 7%;
-	margin-left: 10%;
+	cursor: pointer;
+}
+
+#name_age {
+	background-color: #1D55F0; /* Blue */
+	color: white;
+	font-size: 1.5rem;
+	font-family: 'Passion One', cursive;
+	padding:3%;
+	border: none;
+	cursor: default;
+} 
+
+#about_me, #thought {
+	background-color: #1D55F0; /* Blue */
+	color: white;
+	font-size: 0.9rem;
+	font-family: 'DM Sans', sans-serif;
+	border: none;
+	cursor: default;
+	padding:3%;
+	
+}
+
+h3 {
+	font-size: 1.3rem;
+	font-family: 'Passion One', cursive;
+	color: #00016B; /* dark blue */
 }
 
 /* Quizzes */
