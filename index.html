@@ -28,19 +28,90 @@
 		</script>
 		
 		<div id = "profile">
-			<img title="user_img" id= "user" src="user.svg" alt="image of user - you">
+			<table id="image_keyinfo">
+				<tr>
+					<td rowspan="3"> 
+						<img title="image of user - you" id="user" src="user.svg" alt="image of user - you">
+					</td>
+					<td>
+						<textarea id = "keyinfo" name = "message" rows = "1" cols = "13" readonly>INFP</textarea> 
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<textarea id = "keyinfo" name = "message" rows = "1" cols = "13" readonly>NATURE</textarea> 
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<textarea id = "keyinfo" name = "message" rows = "1" cols = "13" readonly>ART</textarea> 
+					</td>
+				</tr>
+			</table>
 			<br>
-			<textarea id = "name_age" name = "message" rows = "1" cols = "41" readonly>Lily Doe, 22</textarea> 
+			<textarea id = "name_age" name = "message" rows = "1" cols = "40" readonly>Lily Doe, 22</textarea> 
+			<br>
+			<button id = "edit"> EDIT </button>
 			<br>
 			<h3> About Me </h3>
-			<textarea id = "about_me" name = "message" rows = "8" cols = "60" readonly>Hi! </textarea> <!-- if time, make this a variable -->
+			<textarea id = "about_me" name = "message" rows = "8" cols = "59" readonly>Hi! </textarea> <!-- if time, make this a variable -->
+			<button id = "edit"> EDIT </button>
 			<br>
 			<h3> Random Thought </h3>
-			<textarea id = "thought" name = "message" rows = "3" cols = "60" readonly>Currently Watching Pride and Prejudice </textarea>
+			<textarea id = "thought" name = "message" rows = "3" cols = "59" readonly>Currently Watching Pride and Prejudice </textarea>
+			<button id = "edit"> EDIT </button>
 			
 		</div>
 		
 		<div id = "quizzes">
+			<h2> Quizzes </h2> 
+			<table id="character_quiz">
+				<tr> <!-- First row -->
+					<td>
+						<p id="quiz_name">Character Quiz</p>
+					</td>
+					<td>
+						<p id="percentage">70%</p>
+					</td>
+				</tr>
+				<tr> <!-- Second row -->
+					<td colspan="2"> 
+						<p id="quiz_info">This quiz helps to determine your values, morals, and behavior to best match you to people who think like you.</p>
+					</td>
+				</tr>
+				<tr> <!-- Third row -->
+					<td>
+					</td>
+					<td> 
+						<button id="quiz_btn">CONTINUE</button>
+					</td>
+				</tr>
+			</table>
+			
+			<table id="interests_quiz">
+				<tr> <!-- First row -->
+					<td>
+						<p id="quiz_name">Interests Quiz</p>
+					</td>
+					<td>
+						<p id="percentage">0%</p>
+					</td>
+				</tr>
+				<tr> <!-- Second row -->
+					<td colspan="2"> 
+						<p id="quiz_info">This quiz makes it really easy to find people who like the same things as you. No embarrassment necessary. </p>
+					</td>
+				</tr>
+				<tr> <!-- Third row -->
+					<td>
+					</td>
+					<td> 
+						<button id="quiz_btn">PLAY</button>
+					</td>
+				</tr>
+			</table>
+
+			
 		</div>
 
 	</body>

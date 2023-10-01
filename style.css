@@ -34,7 +34,7 @@ body {
 
 
 #logo {
-    width: 45%;
+    width: 50%;
     margin-bottom: 3%;
     margin-top: 10%;
 }
@@ -49,7 +49,7 @@ body {
     list-style: none;
     padding: 6%;
     background-color: white;
-    font-size: 1.2rem; /*font size responsiveness not working */
+    font-size: 1.3rem; /*font size responsiveness not working */
     padding-left: 15%;
     left: 0;
 }
@@ -80,6 +80,7 @@ body {
     color: white;
     font-family: 'DM Sans', sans-serif;
     font-size: 0.7rem;
+	float: right; 
 }
 
 #sign_out:hover {
@@ -91,14 +92,14 @@ body {
 #profile {
     grid-column: 2;
     background-color: #D4E5F5; /* Light blue */
-	padding-left:6%;
-	padding-bottom:6%;
+	padding: 8%;
+	padding-top: 0%;
 }
 
 #user {
-	width: 35%;
+	width: 90%;
     margin-bottom: 4%;
-    margin-top: 7%;
+    margin-top: 10%;
 	cursor: pointer;
 }
 
@@ -110,6 +111,7 @@ body {
 	padding:3%;
 	border: none;
 	cursor: default;
+	margin-left:1%;
 } 
 
 #about_me, #thought {
@@ -123,16 +125,92 @@ body {
 	
 }
 
+button{
+	padding: 5%;
+	background-color: #00016B; /* dark blue */
+	color: white;
+	border: none;
+	float: right;
+	cursor: pointer;
+}
+
+#edit { 
+	padding:1%;
+	padding-left: 2%;
+	padding-right:2%;
+}
+
 h3 {
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	font-family: 'Passion One', cursive;
 	color: #00016B; /* dark blue */
+}
+
+#image_keyinfo {
+	padding-top: 7%;
+	padding-right: 8%;
+}
+
+#keyinfo {
+	background-color: white;
+	color: #00016B; /* dark blue */
+	font-size: 1.8rem;
+	font-family: 'Passion One', cursive;
+	border: none;
+	padding: 7%;
+	margin-left: 12%;
+	text-align:center;
+	cursor: pointer;
+	
 }
 
 /* Quizzes */
 #quizzes {
     grid-column: 3;
     background-color: white;
+	margin:1%;
+	margin-left:7%;
+	margin-right:7%;
+}
+
+h2 {
+	color: #00016B; /* dark blue */
+	font-size: 2.2rem;
+	font-family: 'Passion One', cursive;
+}
+
+#character_quiz, #interests_quiz{
+	background-color: #1D55F0; /* Blue */	
+	padding: 5%;
+	padding-top:0%;
+}
+
+#quiz_name, #percentage {
+	background-color: white;
+	color: #00016B; /* dark blue */
+	font-size: 1.4rem;
+	font-family: 'Passion One', cursive;
+	padding:3%;
+}
+
+#percentage {
+	margin-left: 10%;
+	padding:5%;
+}
+
+#quiz_info {
+	background-color: white;
+	color: #00016B; /* dark blue */
+	font-size: 0.8rem;
+	font-family: 'DM Sans', sans-serif;
+	padding: 3%;
+	margin-top:0%;
+	height: 20vh;
+	vertical-align: top;
+}
+
+#interests_quiz {
+	margin-top: 10%;
 }
 
 	
