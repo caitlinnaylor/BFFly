@@ -3,7 +3,7 @@
 function toggleTableVisibility() {
 	for (let i = 0; i < 3; i++) {
 		const profile = document.getElementById('feed_profile');
-		const profile2 = document.getElementById('feed_profile');
+		const profile2 = document.getElementById('feed_profile2');
 		const container = document.getElementById('feed_profile_scroll');
 		const container2 = document.getElementById('feed_profile_scroll2');
 		const clonedTable = profile.cloneNode(true);
@@ -67,6 +67,16 @@ function toggleImage(image) {
 }
 
 function notAvailable() {
-	alert("Feature not available");
+	alert("Quiz not available");
+}
+
+function signOut() {
+	if(confirm("Are you sure you want to sign out?")){
+		alert("You have been signed out");
+	}
+}
+
+function uploadImage() {
+	alert("This is where a popup to choose a new image would appear");
 }
 

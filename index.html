@@ -14,12 +14,15 @@
 		  
 		  <ul id = "nav">
 				<li id = "active"><a href= "index.html"> Account </a></li><br>
-				<li><a href= "chat.html"> Chat </a> </li><br>
 				<li><a href= "feed.html"> Feed </a> </li><br>
-				<li><a href= "contact.html"> Contact Us </a> </li>
+				<li><a href= "calendar.html"> Calendar </a> </li><br>
+				<li><a href= "chat.html"> Chat </a> </li><br>
+				<li><a href= "games.html"> Games </a> </li><br>
+				<li><a href= "contact.html"> Contact Us </a> </li><br>
+				<li><a href= "settings.html"> Settings </a> </li>
 		  </ul>
 		  
-		  <a id = "sign_out"> SIGN OUT </a>
+		  <a id = "sign_out" onclick="signOut()"> SIGN OUT </a>
 		  
 		</div>
 		
@@ -31,7 +34,7 @@
 			<table id="image_keyinfo">
 				<tr>
 					<td rowspan="3"> 
-						<img title="image of user - you" id="user" src="user.svg" alt="image of user - you">
+						<img title="image of user - you" id="user" src="user.svg" alt="image of user - you" onclick = "uploadImage()">
 					</td>
 					<td>
 						<textarea id = "keyinfo1" name = "message" rows = "1" cols = "13">INFP</textarea> 
@@ -54,7 +57,7 @@
 			<button id = "edit1" onclick = "toggleNameAgeEditable()"> EDIT </button>
 			<br>
 			<h3> About Me </h3>
-			<textarea id = "about_me" name = "message" rows = "8" readonly> Hi! I’ve just moved here from New Zealand and I’m looking for some friends to go on adventures with. I’m a data scientist focusing on climate action and I love the outdoors and animals. I’m very close with my family and I’m the oldest with two younger brothers.  </textarea> 
+			<textarea id = "about_me" name = "message" rows = "9" readonly> Hi! I’ve just moved here from New Zealand and I’m looking for some friends to go on adventures with. I’m a data scientist focusing on climate action and I love the outdoors and animals. I’m very close with my family and I’m the oldest with two younger brothers.  </textarea> 
 			<button id = "edit2" onclick = "toggleAboutMeEditable()" > EDIT </button>
 			<br>
 			<h3> Random Thought </h3>

@@ -10,16 +10,19 @@
 	<body id = "home">
 	<!-- Header - same on every page other than which page is 'active' -->
 		<div id = "header">
-		  <img a href="index.html" title="logo" id= "logo" src="logo.svg" alt="BFFLy logo">
+		  <a href="index.html"> <img title="logo" id= "logo" src="logo.svg" alt="BFFLy logo"> </a>
 		  
 		  <ul id = "nav">
 				<li><a href= "index.html"> Account </a></li><br>
-				<li><a href= "chat.html"> Chat </a> </li><br>
 				<li id = "active"><a href= "feed.html"> Feed </a> </li><br>
-				<li><a href= "contact.html"> Contact Us </a> </li>
+				<li><a href= "calendar.html"> Calendar </a> </li><br>
+				<li><a href= "chat.html"> Chat </a> </li><br>
+				<li><a href= "games.html"> Games </a> </li><br>
+				<li><a href= "contact.html"> Contact Us </a> </li><br>
+				<li><a href= "settings.html"> Settings </a> </li>
 		  </ul>
 		  
-		  <a id = "sign_out"> SIGN OUT </a>
+		  <a id = "sign_out" onclick="signOut()"> SIGN OUT </a>
 		  
 		</div>
 		
@@ -51,7 +54,7 @@
 				<tr class="feed_row"> <!-- Fifth row -->
 					<td colspan="2">
 						<p id="feed_about_me">I’m a landscape architect and am extremely passionate about the environment. 
-						I have a Golden Retriever and a German Shepherd. I want some mates to go hiking with. </p>
+						I have a Golden Retriever and a German Shepherd. I want some mates to go hiking with.</p>
 					</td>
 				</tr>
 				<tr class="feed_row"> <!-- Sixth row -->
@@ -160,39 +163,39 @@
 		</div>
 		
 		<div id = "feed_2">
-			<table id="feed_profile">
+			<table id="feed_profile2">
 				<tr class="feed_row"> <!-- First row -->
 					<td rowspan="3"> 
-						<img title="image of other user" id="feed_user" src="user_1.svg" alt="image of other user">
+						<img title="image of other user" id="feed_user" src="user_2.svg" alt="image of other user">
 					</td>
 					<td>
-						<p class="feed_keyinfo">ENFP</p> 
+						<p class="feed_keyinfo">INFJ</p> 
 					</td>
 				</tr>
 				<tr class="feed_row"> <!-- Second row -->
 					<td>
-						<p class="feed_keyinfo">HIKING</p> 
+						<p class="feed_keyinfo">ANIMALS</p> 
 					</td>
 				</tr>
 				<tr class="feed_row"> <!-- Third row -->
 					<td>
-						<p class="feed_keyinfo">DOGS</p>  
+						<p class="feed_keyinfo">BRUNCH</p>  
 					</td>
 				</tr>
 				<tr class="feed_row"> <!-- Fourth row -->
 					<td colspan="2">
-						<p id="feed_name_age">John Smith, 25</p> 
+						<p id="feed_name_age">Jessica Dunk, 20</p> 
 					</td>
 				</tr>
 				<tr class="feed_row"> <!-- Fifth row -->
 					<td colspan="2">
-						<p id="feed_about_me">I’m a landscape architect and am extremely passionate about the environment. 
-						I have a Golden Retriever and a German Shepherd. I want some mates to go hiking with. </p>
+						<p id="feed_about_me">Animals are my favourite thing in the whole wide world other than swimming. 
+						I’m looking for some peeps who want to explore the brunch places of Melbourne with me.  </p>
 					</td>
 				</tr>
 				<tr class="feed_row"> <!-- Sixth row -->
 					<td colspan="2">
-						<p id="feed_thought">Scrolling instagram at work. Oops. </p>
+						<p id="feed_thought">Olivia Rodrigo’s new album has killed me. Especially Teenage Dream.</p>
 					</td>
 				</tr>
 				</tr>
@@ -203,88 +206,89 @@
 				
 			</table>
 			
-			<table id="feed_profile">
+			<table id="feed_profile2">
 				<tr class="feed_row"> <!-- First row -->
 					<td rowspan="3"> 
-						<img title="image of other user" id="feed_user" src="user_1.svg" alt="image of other user">
+						<img title="image of other user" id="feed_user" src="user_2.svg" alt="image of other user">
 					</td>
 					<td>
-						<p class="feed_keyinfo">ENFP</p> 
+						<p class="feed_keyinfo">INFJ</p> 
 					</td>
 				</tr>
 				<tr class="feed_row"> <!-- Second row -->
 					<td>
-						<p class="feed_keyinfo">HIKING</p> 
+						<p class="feed_keyinfo">ANIMALS</p> 
 					</td>
 				</tr>
 				<tr class="feed_row"> <!-- Third row -->
 					<td>
-						<p class="feed_keyinfo">DOGS</p>  
+						<p class="feed_keyinfo">BRUNCH</p>  
 					</td>
 				</tr>
 				<tr class="feed_row"> <!-- Fourth row -->
 					<td colspan="2">
-						<p id="feed_name_age">John Smith, 25</p> 
+						<p id="feed_name_age">Jessica Dunk, 20</p> 
 					</td>
 				</tr>
 				<tr class="feed_row"> <!-- Fifth row -->
 					<td colspan="2">
-						<p id="feed_about_me">I’m a landscape architect and am extremely passionate about the environment. 
-						I have a Golden Retriever and a German Shepherd. I want some mates to go hiking with. </p>
+						<p id="feed_about_me">Animals are my favourite thing in the whole wide world other than swimming. 
+						I’m looking for some peeps who want to explore the brunch places of Melbourne with me.  </p>
 					</td>
 				</tr>
 				<tr class="feed_row"> <!-- Sixth row -->
 					<td colspan="2">
-						<p id="feed_thought">Scrolling instagram at work. Oops. </p>
+						<p id="feed_thought">Olivia Rodrigo’s new album has killed me. Especially Teenage Dream.</p>
 					</td>
 				</tr>
 				</tr>
 					<td colspan = "2">
-						<img title="add user" class="plus_btn5" src="Plus_btn.svg" alt="add user" onclick="toggleImage(this)">
+						<img title="add user" class="plus_btn4" src="Plus_btn.svg" alt="add user" onclick="toggleImage(this)">
 					</td>
 				<tr>
 				
 			</table>
-			<table id="feed_profile">
+			<table id="feed_profile2">
 				<tr class="feed_row"> <!-- First row -->
 					<td rowspan="3"> 
-						<img title="image of other user" id="feed_user" src="user_1.svg" alt="image of other user">
+						<img title="image of other user" id="feed_user" src="user_2.svg" alt="image of other user">
 					</td>
 					<td>
-						<p class="feed_keyinfo">ENFP</p> 
+						<p class="feed_keyinfo">INFJ</p> 
 					</td>
 				</tr>
 				<tr class="feed_row"> <!-- Second row -->
 					<td>
-						<p class="feed_keyinfo">HIKING</p> 
+						<p class="feed_keyinfo">ANIMALS</p> 
 					</td>
 				</tr>
 				<tr class="feed_row"> <!-- Third row -->
 					<td>
-						<p class="feed_keyinfo">DOGS</p>  
+						<p class="feed_keyinfo">BRUNCH</p>  
 					</td>
 				</tr>
 				<tr class="feed_row"> <!-- Fourth row -->
 					<td colspan="2">
-						<p id="feed_name_age">John Smith, 25</p> 
+						<p id="feed_name_age">Jessica Dunk, 20</p> 
 					</td>
 				</tr>
 				<tr class="feed_row"> <!-- Fifth row -->
 					<td colspan="2">
-						<p id="feed_about_me">I’m a landscape architect and am extremely passionate about the environment. 
-						I have a Golden Retriever and a German Shepherd. I want some mates to go hiking with. </p>
+						<p id="feed_about_me">Animals are my favourite thing in the whole wide world other than swimming. 
+						I’m looking for some peeps who want to explore the brunch places of Melbourne with me.  </p>
 					</td>
 				</tr>
 				<tr class="feed_row"> <!-- Sixth row -->
 					<td colspan="2">
-						<p id="feed_thought">Scrolling instagram at work. Oops. </p>
+						<p id="feed_thought">Olivia Rodrigo’s new album has killed me. Especially Teenage Dream. </p>
 					</td>
 				</tr>
 				</tr>
 					<td colspan = "2">
-						<img title="add user" class="plus_btn6" src="plus_btn.svg" alt="add user" onclick="toggleImage(this)">
+						<img title="add user" class="plus_btn4" src="Plus_btn.svg" alt="add user" onclick="toggleImage(this)">
 					</td>
 				<tr>
+				
 			</table>
 			
 			<div id = "feed_profile_scroll2">

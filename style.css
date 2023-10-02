@@ -7,28 +7,15 @@ body {
     grid-template-columns: 16% 45% auto; /* Three columns: sidebar, profile, quizzes */
 }
 
-/* Side Navigation Bar */
-/**
-#header {
-    grid-column: 1;
-    background-color: #00016B; 
-    padding: 8%;
- 
-    height: 100%;
-    padding-right: 25%;
-	min-height: 100vh;
-}
-*/
-
 #header {
     grid-column: 1;
     background-color: #00016B; /* dark blue */
     padding: 2%;
-    position: fixed; /* Set header to fixed position */
-    top: 0; /* Position it at the top of the viewport */
+    position: fixed; 
+    top: 0; 
     left: 0;
-    width: 10%; /* Set the width explicitly */
-    height: 100%; /* Make it cover the entire viewport height */
+    width: 10%;
+    height: 100%; 
     padding-right: 4%;
 }
 
@@ -94,19 +81,27 @@ body {
     background-color: #D4E5F5; /* Light blue */
 	padding: 8%;
 	padding-top: 0%;
+	min-height: 100vh
+	
 }
 
 #user {
-	width: 90%;
+	width: 17vw;
     margin-bottom: 4%;
     margin-top: 10%;
 	cursor: pointer;
+	transition: transform 0.3s;
 }
+
+#user:hover {
+	content: url('user_upload.svg');
+}
+
 
 #name_age {
 	background-color: #1D55F0; /* Blue */
 	color: white;
-	font-size: 1.5rem;
+	font-size: 3.8vh;
 	font-family: 'Passion One', cursive;
 	padding:3%;
 	border: none;
@@ -126,8 +121,7 @@ body {
 	padding:3%;
 	width: 100%; 
     max-width: 35vw; 
-    resize: vertical; 
-	
+    resize: vertical; 	
 }
 
 button{
@@ -139,6 +133,10 @@ button{
 	cursor: pointer;
 }
 
+button:hover {
+	color: #1D55F0; /* Blue */
+}
+
 #edit1, #edit2, #edit3 { 
 	padding:1%;
 	padding-left: 2%;
@@ -146,7 +144,7 @@ button{
 }
 
 h3 {
-	font-size: 1.5rem;
+	font-size: 4vh;
 	font-family: 'Passion One', cursive;
 	color: #00016B; /* dark blue */
 }
@@ -159,14 +157,17 @@ h3 {
 #keyinfo1, #keyinfo2, #keyinfo3 {
 	background-color: white;
 	color: #00016B; /* dark blue */
-	font-size: 1.8rem;
+	font-size: 2.5vw;
 	font-family: 'Passion One', cursive;
 	border: none;
 	padding: 7%;
 	margin-left: 12%;
 	text-align:center;
 	cursor: pointer;
-	
+}
+
+#keyinfo1:hover, #keyinfo2:hover, #keyinfo3:hover {
+	color: #1D55F0; /* Blue */
 }
 
 /* Quizzes */
@@ -180,7 +181,7 @@ h3 {
 
 h2 {
 	color: #00016B; /* dark blue */
-	font-size: 2.2rem;
+	font-size: 5.5vh;
 	font-family: 'Passion One', cursive;
 }
 
@@ -218,6 +219,10 @@ h2 {
 	margin-top: 10%;
 }
 
+#interests_quiz #percentage {
+	padding: 10%;
+}
+
 /* Feed */
 
 #feed_1 {
@@ -228,10 +233,9 @@ h2 {
 #feed_2 {
 	grid-column: 3;
 	margin-right:25%;
-	margin-top:1%;
 }
 
-#feed_profile {
+#feed_profile, #feed_profile2 {
 	background-color: #D4E5F5; /* Light blue */
 	padding: 8%;
 	margin-top: 5%;
@@ -240,10 +244,15 @@ h2 {
 	padding-bottom: 5%;
 }
 
+#feed_2 #feed_profile, #feed_profile2 {
+	padding-top: 9%;
+	margin-top:6%;
+}
+
 .feed_keyinfo {
 	background-color: white;
 	color: #00016B; /* dark blue */
-	font-size: 1.2rem;
+	font-size: 1.7vw;
 	font-family: 'Passion One', cursive;
 	border: none;
 	padding: 10%;
@@ -299,6 +308,10 @@ h2 {
 	float:right;
 	margin:0%;
 	cursor: pointer;
+}
+
+.plus_btn1:hover, .plus_btn2:hover, .plus_btn3:hover, .plus_btn4:hover, .plus_btn5:hover, .plus_btn6:hover {
+	content: url('plus_hover.svg');
 }
 
 #feed_profile_scroll, #feed_profile_scroll2 {
