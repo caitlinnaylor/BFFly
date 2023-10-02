@@ -58,23 +58,15 @@ function toggleThoughtEditable() {
     }
 }
 
-function toggleKeyInfoEditable(keyinfo) {
-    const editableTextarea = document.getElementById(keyinfo);
-
-    if (editableTextarea.getAttribute('readonly') === null) {
-        editableTextarea.setAttribute('readonly', 'readonly');
-    } else {
-        editableTextarea.removeAttribute('readonly');
-        editableTextarea.focus();
-    }
-}
-
 const imageSources = ['plus_btn.svg', 'tick_btn.svg'];
 let currentImageIndex = 0;
 
-function toggleImage() {
-	const image = document.getElementById('plus_btn');
-	currentImageIndex = (currentImageIndex + 1) % imageSources.length;
-	image.src = imageSources[currentImageIndex];
+function toggleImage(image) {
+  currentImageIndex = (currentImageIndex + 1) % imageSources.length;
+  image.src = imageSources[currentImageIndex];
+}
+
+function notAvailable() {
+	alert("Feature not available");
 }
 

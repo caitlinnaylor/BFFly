@@ -294,7 +294,7 @@ h2 {
 	
 }
 
-#plus_btn {
+.plus_btn1, .plus_btn2, .plus_btn3, .plus_btn4, .plus_btn5, .plus_btn6 {
 	width:2.5vw;
 	float:right;
 	margin:0%;
