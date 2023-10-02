@@ -46,7 +46,6 @@ function toggleNameAgeEditable() {
 
 function toggleThoughtEditable() {
     const editableTextarea = document.getElementById('thought');
-	alert("hi");
 
     if (editableTextarea.getAttribute('readonly') === null) {
         editableTextarea.setAttribute('readonly', 'readonly');
