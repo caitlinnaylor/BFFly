@@ -7,6 +7,8 @@ body {
     grid-template-columns: 16% 45% auto; /* Three columns: sidebar, profile, quizzes */
 }
 
+/*Nav Bar */
+
 #header {
     grid-column: 1;
     background-color: #00016B; /* dark blue */

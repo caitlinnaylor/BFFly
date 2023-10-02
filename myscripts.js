@@ -1,5 +1,5 @@
 
-// Function to toggle the visibility of the table when at the end of the page
+/** Function to toggle the visibility of the table when at the end of the page*/
 function toggleTableVisibility() {
 	for (let i = 0; i < 3; i++) {
 		const profile = document.getElementById('feed_profile');
@@ -17,7 +17,7 @@ function toggleTableVisibility() {
 	}
     
 }
-//Edit button for text areas 
+/**Edit button for text areas*/ 
 function toggleAboutMeEditable() {
     const editableTextarea = document.getElementById('about_me');
 
@@ -58,6 +58,7 @@ function toggleThoughtEditable() {
     }
 }
 
+/** Changes between plus and tick for adding user button */
 const imageSources = ['plus_btn.svg', 'tick_btn.svg'];
 let currentImageIndex = 0;
 
@@ -66,9 +67,12 @@ function toggleImage(image) {
   image.src = imageSources[currentImageIndex];
 }
 
+/**Alert for quizzes to give feedback that the quiz pages are not implemented */
 function notAvailable() {
 	alert("Quiz not available");
 }
+
+/**Alert for sign out button to give some response back */
 
 function signOut() {
 	if(confirm("Are you sure you want to sign out?")){
@@ -76,6 +80,7 @@ function signOut() {
 	}
 }
 
+/** Shows that something should happen when user image clicked */
 function uploadImage() {
 	alert("This is where a popup to choose a new image would appear");
 }
