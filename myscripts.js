@@ -1,33 +1,22 @@
-// Function to check if the user has reached the end of the page
-function isAtPageEnd() {
-    const content = document.getElementById('content');
-    const table = document.getElementById('feed_profile_scroll');
-    const contentHeight = content.offsetHeight;
-    const scrollTop = window.scrollY;
-    const windowHeight = window.innerHeight;
-
-    // You can adjust this threshold as needed
-    const threshold = 100; // Adjust this value as needed
-
-    return contentHeight - (scrollTop + windowHeight) < threshold;
-}
 
 // Function to toggle the visibility of the table when at the end of the page
 function toggleTableVisibility() {
-    const table = document.getElementById('feed_profile_scroll');
-    if (isAtPageEnd()) {
-        table.style.display = 'block';
-    } else {
-        table.style.display = 'none';
-    }
+	for (let i = 0; i < 3; i++) {
+		const profile = document.getElementById('feed_profile');
+		const profile2 = document.getElementById('feed_profile');
+		const container = document.getElementById('feed_profile_scroll');
+		const container2 = document.getElementById('feed_profile_scroll2');
+		const clonedTable = profile.cloneNode(true);
+		const clonedTable2 = profile2.cloneNode(true);
+
+	  // Append the cloned table to the container
+		container.appendChild(clonedTable);
+		container2.appendChild(clonedTable2);
+		container.style.display = 'block';
+		container2.style.display = 'block';
+	}
+    
 }
-
-// Attach a scroll event listener to the window
-window.addEventListener('scroll', toggleTableVisibility);
-
-// Initial check when the page loads
-window.addEventListener('load', toggleTableVisibility);
-
 //Edit button for text areas 
 function toggleAboutMeEditable() {
     const editableTextarea = document.getElementById('about_me');

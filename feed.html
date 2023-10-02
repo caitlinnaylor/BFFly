@@ -109,8 +109,7 @@
 				<tr>
 				
 			</table>
-			
-			<table id="feed_profile_scroll">
+			<table id="feed_profile">
 				<tr class="feed_row"> <!-- First row -->
 					<td rowspan="3"> 
 						<img title="image of other user" id="feed_user" src="user_1.svg" alt="image of other user">
@@ -147,10 +146,15 @@
 				</tr>
 				</tr>
 					<td colspan = "2">
-						<img title="add user" id="plus_btn" src="Plus_btn.svg" alt="add user" onclick="toggleImage()">
+						<img title="add user" id="plus_btn" src="plus_btn.svg" alt="add user" onclick="toggleImage()">
 					</td>
 				<tr>
 			</table>
+			
+			<div id = "feed_profile_scroll">
+			</div>
+			
+			<button id = "show_more" onclick = "toggleTableVisibility()"> Show More </button>
 
 				
 		</div>
@@ -241,8 +245,7 @@
 				<tr>
 				
 			</table>
-			
-			<table id="feed_profile_scroll">
+			<table id="feed_profile">
 				<tr class="feed_row"> <!-- First row -->
 					<td rowspan="3"> 
 						<img title="image of other user" id="feed_user" src="user_1.svg" alt="image of other user">
@@ -283,6 +286,9 @@
 					</td>
 				<tr>
 			</table>
+			
+			<div id = "feed_profile_scroll2">
+			</div>
 
 				
 		</div>

@@ -301,8 +301,17 @@ h2 {
 	cursor: pointer;
 }
 
-#feed_profile_scroll {
+#feed_profile_scroll, #feed_profile_scroll2 {
     display: none;
+}
+
+#show_more {
+	background-color: white;
+	color:  #1D55F0; /* Blue */
+}
+
+#show_more:hover {
+	color: #D4E5F5; /* Light blue */
 }
 	
 
