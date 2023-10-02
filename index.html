@@ -34,32 +34,32 @@
 						<img title="image of user - you" id="user" src="user.svg" alt="image of user - you">
 					</td>
 					<td>
-						<textarea id = "keyinfo" name = "message" rows = "1" cols = "13" readonly>INFP</textarea> 
+						<textarea id = "keyinfo1" name = "message" rows = "1" cols = "13" onclick = "toggleKeyInfoEditable('keyinfo1')" readonly>INFP</textarea> 
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<textarea id = "keyinfo" name = "message" rows = "1" cols = "13" readonly>NATURE</textarea> 
+						<textarea id = "keyinfo2" name = "message" rows = "1" cols = "13" onclick = "toggleKeyInfoEditable('keyinfo2')"  readonly>NATURE</textarea> 
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<textarea id = "keyinfo" name = "message" rows = "1" cols = "13" readonly>ART</textarea> 
+						<textarea id = "keyinfo3" name = "message" rows = "1" cols = "13" onclick = "toggleKeyInfoEditable('keyinfo3')" readonly>ART</textarea> 
 					</td>
 				</tr>
 			</table>
 			<br>
-			<textarea id = "name_age" name = "message" rows = "1" cols = "40" readonly>Lily Doe, 22</textarea> 
+			<textarea id = "name_age" name = "message" rows = "1" readonly>Lily Doe, 22</textarea> 
 			<br>
-			<button id = "edit"> EDIT </button>
+			<button id = "edit1" onclick = "toggleNameAgeEditable()"> EDIT </button>
 			<br>
 			<h3> About Me </h3>
-			<textarea id = "about_me" name = "message" rows = "8" cols = "59" readonly>Hi! </textarea> <!-- if time, make this a variable -->
-			<button id = "edit"> EDIT </button>
+			<textarea id = "about_me" name = "message" rows = "8" readonly> Hi! I’ve just moved here from New Zealand and I’m looking for some friends to go on adventures with. I’m a data scientist focusing on climate action and I love the outdoors and animals. I’m very close with my family and I’m the oldest with two younger brothers.  </textarea> 
+			<button id = "edit2" onclick = "toggleAboutMeEditable()" > EDIT </button>
 			<br>
 			<h3> Random Thought </h3>
-			<textarea id = "thought" name = "message" rows = "3" cols = "59" readonly>Currently Watching Pride and Prejudice </textarea>
-			<button id = "edit"> EDIT </button>
+			<textarea id = "thought" name = "message" rows = "3" readonly>Currently Watching Pride and Prejudice </textarea>
+			<button id = "edit3" onclick = "toggleThoughtEditable()"> EDIT </button>
 			
 		</div>
 		
