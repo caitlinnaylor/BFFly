@@ -80,3 +80,12 @@ function toggleKeyInfoEditable(keyinfo) {
     }
 }
 
+const imageSources = ['plus_btn.svg', 'tick_btn.svg'];
+let currentImageIndex = 0;
+
+function toggleImage() {
+	const image = document.getElementById('plus_btn');
+	currentImageIndex = (currentImageIndex + 1) % imageSources.length;
+	image.src = imageSources[currentImageIndex];
+}
+

@@ -298,6 +298,7 @@ h2 {
 	width:2.5vw;
 	float:right;
 	margin:0%;
+	cursor: pointer;
 }
 
 #feed_profile_scroll {
