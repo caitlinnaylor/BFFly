@@ -9,7 +9,7 @@ body {
 
 /*Nav Bar */
 
-#header {
+header {
     grid-column: 1;
     background-color: #00016B; /* dark blue */
     padding: 2%;
